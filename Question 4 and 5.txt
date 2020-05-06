@@ -1,0 +1,14 @@
+Question 4:
+What is the difference between code-first approach and database approach in Entity framework?
+
+There are two approaches you can take when it comes to working with Entity Framework.
+
+The first one is Code-First where setup the View first and then add the connections to the Model after. This approach is useful when you do not have access to the Database and simply want to setup a foundation for your application before adding the connections.
+
+The Database Approach is to have the Entity Framework import your database and have all your data converted into classes in your application. This allows you to have direct access to the database through the classes and makes it easier to manipulate the back end information from the front end. The Database approach is the more convenient approach.
+
+---------------------------------------------------------------
+Question 5: What is the MVVM design pattern? 
+MVVM stands for Model View Viewmodel.
+
+The idea is to replace the Controller in MVC with a Viewmodel that is capable of manipulating data within the database directly through its generated classes. These classes are synchronized with the data in the backend. Databinding is done on the Viewmodel and whenever there is a change in the state of the Viewmodel, it refreshes to reflect the changes between the frontend and backend.
